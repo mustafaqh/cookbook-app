@@ -1,0 +1,30 @@
+.border-top{
+    -fx-background-color: #004F84;
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+}
+.root{
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #ffffff;
+}
+.border-top Label{
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+}
+#button-mess{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+.button-bar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+#search-field{
+    -fx-width: 100px;
+    -fx-max-width: 100px;
+}

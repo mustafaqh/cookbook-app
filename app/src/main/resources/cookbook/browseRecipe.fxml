@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.BrowseRecipeCont">
+   <left>
+      <ListView fx:id="recipeList" accessibleRole="MENU" onMouseClicked="#displaySelected" prefHeight="533.0" prefWidth="377.0" style="-fx-background-color: #b8a399#b8a399 #b8a399#b8a399;" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <TextField alignment="CENTER" prefHeight="67.0" prefWidth="1200.0" style="-fx-background-color: #b8a399#b8a399;" text="Browse for recipes" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </TextField>
+   </top>
+   <right>
+      <VBox prefHeight="523.0" prefWidth="836.0" style="-fx-background-color: #b8a399#b8a399 #b8a399#b8a399 #b8a399#b8a399 #b8a399#b8a399;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="803.0">
+               <children>
+                  <Button fx:id="unstar" alignment="CENTER" contentDisplay="BOTTOM" layoutX="395.0" mnemonicParsing="false" onAction="#unstarOnAction" prefHeight="53.0" prefWidth="57.0" style="-fx-background-color: #b8a399#b8a399 #b8a399#b8a399;">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Images/ss.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="starr" alignment="CENTER" contentDisplay="BOTTOM" layoutX="338.0" mnemonicParsing="false" onAction="#starOnAction" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #b8a399#b8a399 #b8a399#b8a399;">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Images/R.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="Week" layoutX="452.0" layoutY="9.0" promptText="Enter week...." />
+                  <Button layoutX="607.0" layoutY="20.0" mnemonicParsing="false" onAction="#AddToWeekly" prefHeight="31.0" prefWidth="110.0" text="Add to weeky list" />
+                  <ComboBox fx:id="comb" layoutX="452.0" layoutY="36.0" prefWidth="150.0" promptText="choose the day" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="screen" alignment="CENTER" editable="false" mouseTransparent="true" prefHeight="77.0" prefWidth="780.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="screenSD" editable="false" prefHeight="74.0" prefWidth="784.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="ScreenLD" editable="false" prefHeight="103.0" prefWidth="784.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="screenSte" editable="false" prefHeight="129.0" prefWidth="784.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="screenIngr" prefHeight="112.0" prefWidth="784.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="close" mnemonicParsing="false" onAction="#close" prefHeight="43.0" prefWidth="800.0" text="Close">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Myanmar Sangam MN" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

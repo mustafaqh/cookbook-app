@@ -1,0 +1,12 @@
+Simple application that mixes programming styles. There is a lack of separation of concerns, mainly the database 
+functionality is inlined in most methods rather than put in a controller in itself. Same goes for JavaFX, where 
+fxml sometimes is used and sometimes not (opting for programming the GUI). This mix makes it a bit difficult to 
+maintain in the long run. Also, there are a few cases where Swing has been used rather than JavaFX (JOptionPane) 
+which makes it look rather strange.
+
+Presentation
+------------
+Okay, you know your application fairly well and some of the weaknesses (like how to add a recipie) are shown. 
+Good speed and content.
+
+Grade: E

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookbook.Controller">
+   <top>
+    <BorderPane prefHeight="52.0" prefWidth="600.0" styleClass="border-top">
+          <left>
+              <Label id="header-welcome" text="Welcome paste here display name" />
+
+          </left>
+          <right>
+              <Button id="button-mess" alignment="CENTER" onAction="#switchToMess" text="Messages">
+                  <graphic>
+                      <ImageView fitHeight="30" fitWidth="40" preserveRatio="true" styleClass="image-mess">
+                        <Image url="@../Images/envelope.png" />
+                      </ImageView>
+                  </graphic>
+              </Button>
+          </right>
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <buttons>
+                  <Button mnemonicParsing="false" onAction="#switchToHome" styleClass="button-bar" text="Home" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToBrowse" styleClass="button-bar" text="Browse" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToWeek" styleClass="button-bar" text="Weekly Lists" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToShop" styleClass="button-bar" text="Shopping Lists" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToAdd" styleClass="button-bar" text="Add recipe" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToSearch" styleClass="button-bar" text="Search" ButtonBar.buttonData="LEFT" />
+                  <Button mnemonicParsing="false" onAction="#switchToAdmin" styleClass="button-bar" text="Admin" ButtonBar.buttonData="LEFT" />
+              </buttons>
+            </ButtonBar>
+         </bottom>
+      </BorderPane>
+   </top>
+    <center>
+        <GridPane>
+            <Label text="shop form" />
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </center>
+
+</BorderPane>
