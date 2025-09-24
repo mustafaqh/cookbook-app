@@ -212,7 +212,7 @@ If you have tests:
 
 ---
 
-## Screenshots (optional)
+<!-- ## Screenshots (optional)
 
 Place images in `Images/` and reference them here:
 
@@ -220,7 +220,7 @@ Place images in `Images/` and reference them here:
 ![Recipe Details](Images/details.png)
 
 ---
-
+-->
 ##  Troubleshooting
 
 - **Access denied for user** – check `USER/PASS`, and grant privileges:
