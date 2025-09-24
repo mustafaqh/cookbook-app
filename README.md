@@ -4,7 +4,7 @@
 **Institution:** Linnaeus University – Faculty of Technology  
 **Term:** Spring 2022  
 **Repository:** https://github.com/mustafaqh/cookbook-app  
-**Team Members:** [Add names]  
+
 
 ---
 
