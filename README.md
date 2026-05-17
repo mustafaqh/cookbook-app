@@ -253,14 +253,8 @@ This project reflects the course goals: planning and executing a software projec
 
 ---
 
-##  License
-
-Academic project for 1DV508 (Linnaeus University).  
-Choose a license (MIT/Apache‑2.0) if you plan to share publicly.
-
----
 
 ##  Acknowledgements
 
 - Linnaeus University – 1DV508  
-- Team members and supervisor(s)
+
